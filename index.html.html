@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 3 - TAW</title>
+    <style>
+        body{
+            align-items: left; 
+            justify-content: left; 
+            text-align: left;
+        }
+
+        #d1{
+            display: flex;
+            width: 1000px;   
+            margin: 0 auto;
+            gap: 20px;
+        }
+
+        .left-column{
+            flex: 2;
+        }
+
+        .right-column{
+            flex: 1;
+        }
+
+        h1{
+            color: #5B9BD5;
+        }
+
+        h2{
+            color: #5B9BD5;
+        }
+
+        p{
+            font-size: 20px;
+            color: black;
+        }
+
+        table{
+            margin: 0 auto;
+        }
+
+        #botao{
+            text-align: center;
+            background-color: #5B9BD5;
+            color: white;
+            border: none;
+            font-size: 20px;
+            padding: 5px 25px;
+            cursor: pointer;
+            margin-top: 15px;   
+            }
+        
+        #botao:hover{
+            background-color: darkblue;
+        }
+
+        footer{
+            width: 1000px;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #5B9BD5;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        textarea#Question{
+            width: 100%;
+            height: 60px;
+        }
+
+        header{
+            display: flex;
+            align-items: center;
+            width: 1000px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+
+        nav span{
+            font-size: 24px;
+            font-weight: bold;
+            color: #5B9BD5
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img{
+            width: 200px;
+            height: auto;
+        }
+
+        nav{
+            display: flex;
+            gap: 10px;
+            margin-left: auto;
+        }
+
+        form input[type="email"], form textarea{
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #5B9BD5;
+            box-sizing: border-box;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        form textarea#Question{
+            height: 60px;
+            resize: none;
+        }
+
+        form input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #5B9BD5;
+            border-radius: 0px;
+            background-color: white;
+            margin: 0;
+        }
+
+        form input[type="checkbox"]:checked {
+            background-color: darkblue;
+        }
+
+        #checkbox-container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        #checkbox-container label {
+            margin-right: auto;
+        }
+
+        .left-column img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            
+            h1, h2 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            #d1 {
+                flex-direction: column;
+                padding: 10px;
+                width: 100%;
+                gap: 10px;
+            }
+
+            .left-column img {
+                width: 100%;
+                height: auto;
+            }
+
+            footer {
+                width: 100%;
+                text-align: center;
+            }
+
+            header {
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+                margin-left: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+
+        <nav>
+            <span>WHO WE ARE |</span>
+            <span> WHAT WE DO |</span>
+            <span> CONTACTS</span>
+        </nav>
+    </header>
+
+    <div id="d1">
+        <div class="left-column">
+            <h1>
+                GROUP #3
+            </h1>
+
+            <h2>
+                COME AND WORK WITH US
+            </h2>
+
+            <p>André Moldovan, André Silva, Gonçalo Brito, Miguel Tavares</p>
+
+            <img src="foto grupo 3 cortada.jpg" alt="Foto">
+
+        </div>
+        
+        <div class="right-column">
+
+            <h2>
+                ASK INFO
+            </h2>
+
+            <form action="" method="post">
+                <label for="Email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="Question">Question:</label><br>
+                <textarea id="Question" name="Question"></textarea><br>
+
+                <div id="checkbox-container">
+                    <label for="Price">Price Request?</label>
+                    <input type="checkbox" id="price" name="price"><br>
+                </div>
+                
+                <input type="submit" value="Ask" id="botao">
+            </form>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© GROUP #3 TAW 2025<br><em style="font-size: 18px;">Made by André Silva - 20241695, André Moldovan - 20241716, Gonçalo Brito - 20241743 and Miguel Tavares - 20241811</em></p>
+    </footer>
+    
+</body>
+</html>
